@@ -2,9 +2,9 @@ from app import app
 from flask import render_template, request, redirect, url_for, flash
 import datetime
 
-def format_date_joined(year, mon, d):
+def format_date_joined():
     now = datetime.datetime.now() #today's date
-    date_joined = datetime.date(year, mon, d) #specific date
+    date_joined = datetime.date(2024, 2, 18) #specific date
     # Format date to return only month and year
     return "Joined " + date_joined.strftime("%B, %Y")
 
@@ -27,7 +27,7 @@ def about():
 @app.route('/profile')
 def profile():
     """Renders the website's profile page. """
-    joinDate = format_date_joined(2024, 2, 18)
+    joinDate = format_date_joined()
     return render_template('profile.html', name="Aubrianna Falloon", date=joinDate)
 ###
 # The functions below should be applicable to all Flask apps.
