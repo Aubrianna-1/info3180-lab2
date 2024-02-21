@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <div class="profile_top">
+        <img src="{{ url_for('static', filename='girl.jpg') }}" alt="girl blowing bubblegum">
+        <h1>{{ name }}</h1>
+        <p> @aubbb <br>
+            Kingston, Jamaica<br>
+            {{ date }}</p>
+        
+    </div>
+
+<div class="status">
+    <div class="details">
+        <p>
+            3rd year student trying her best. Future Web Developer? Maybe. Future software engineer?
+            Probably not. I do enjoy seeing the final result, so I might be interested in some
+            front-end work. <br>
+            I also like memes and reading, hopefully I can incorporate that into my work.
+        </p>
+    </div>
+
+    <div class="specs">
+
+        <div class="posts">
+            <div class="val">
+                <h6>7</h6>
+            </div>
+            <div class="repr"> <!-- repr is for represents, so 7 represents the amount of posts -->
+                <h6>Posts</h6>
+            </div>
+        </div>
+
+        <div class="following">
+            <div class="amt">
+                <h6>100</h6>
+            </div>
+            <div class="repr">
+                <h6>Following</h6>
+            </div>
+        </div>
+
+        <div class="followers">
+            <div class="amt">
+                <h6>250</h6>
+            </div>
+            <div class="repr"> 
+                <h6>Followers</h6>
+            </div>
+        </div>
+            
+    
+    </div>
+
+        <form method="post">
+            <input type="button" value="Follow">
+        </form>
+   
+</div>
+
+    
+
+{% endblock %}

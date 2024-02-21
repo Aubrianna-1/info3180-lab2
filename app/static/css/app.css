@@ -1,3 +1,91 @@
+
 body {
     padding-top: 5rem;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    line-height: 1.5;
+    font-size: 14px; 
+    width: 500px;    
 }
+
+
+
+.profile_top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #55995f;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.profile_top > p {
+    text-align: center;
+}
+
+img {
+    margin-top: 20px;
+    height: 150px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.status{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 15px;
+}
+
+.details > p{
+    text-align: center;
+    color: #939393;
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px;
+}
+
+.following{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px;
+}
+
+.followers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px;
+}
+
+.repr{
+    color:#939393;
+}
+
+.specs{
+    display: flex;
+    flex-direction: row;
+}
+
+input{
+    background: #7ed321;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 45px 10px 45px;
+}
+
+
