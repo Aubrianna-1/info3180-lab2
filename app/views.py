@@ -27,8 +27,8 @@ def about():
 @app.route('/profile')
 def profile():
     """Renders the website's profile page. """
-    joinDate = format_date_joined()
-    return render_template('profile.html', name="Aubrianna Falloon", date=joinDate)
+    joinedDate = format_date_joined()
+    return render_template('profile.html', name="Aubrianna Falloon", date=joinedDate)
 ###
 # The functions below should be applicable to all Flask apps.
 ###
